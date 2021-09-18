@@ -6,7 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PG Admission Links</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-</head>
+<script type="text/javascript">
+  
+    // disable right click
+    document.addEventListener('contextmenu', event => event.preventDefault());
+ 
+    document.onkeydown = function (e) {
+ 
+        // disable F12 key
+        if(e.keyCode == 123) {
+            return false;
+        }
+ 
+        // disable I key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+            return false;
+        }
+ 
+        // disable J key
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+            return false;
+        }
+ 
+        // disable U key
+        if(e.ctrlKey && e.keyCode == 85) {
+            return false;
+        }
+        // disable r key
+        if(e.ctrlKey  && e.shiftKey && e.keyCode == 114) {
+            return false;
+        } 
+        // disable R key
+        if(e.ctrlKey  && e.shiftKey && e.keyCode == 82) {
+            return false;
+        }
+        if(e.ctrlKey && e.keyCode == 82) {
+            return false;
+        }
+        //f5 disable
+        if(e.keyCode == 116) {
+            return false;
+        }
+    }
+ $('body').bind('copy paste',function(e) {
+    e.preventDefault(); return false; 
+});
+
+
+  $(document).ready(function() {
+
+      window.history.pushState(null, "", window.location.href);        
+
+      window.onpopstate = function() {
+
+          window.history.pushState(null, "", window.location.href);
+
+      };
+
+  });
+   
+
+</script>
+    </head>
+    
 <body>
     <script> 
 alert("এখানে দেওয়া সকল তথ্য official site থেকে দেওয়া হয়েছে। নতুন কিছু updates আসলে সেটা অবশ্যই দেওয়া হবে। বি.দ্র.- প্রত্যেকটা University/College এর website নিজেরা check করে verify করে নিন। কোনোরকম ভুলত্রুটিতে আমরা দায়ী থাকব না");
