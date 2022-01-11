@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title></title>
+<title>MathHub|Authentication</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,7 +10,7 @@
 
 <style>
 
-  body {
+body {
 
 	background-image: url('grunge_patterns.jpg');
 	background-attachment: fixed;
@@ -48,17 +49,17 @@ div.vertical {
 }
 
 ::-webkit-input-placeholder {
-   color: rgb(194, 21, 21);
+   color: #955;
    text-align: center;
 }
 
 ::-moz-placeholder {
-   color: rgb(240, 12, 12);
+   color: #955;
    text-align: center;
 }
 
 :-ms-input-placeholder {
-   color: rgb(219, 6, 6);
+   color: #955;
    text-align: center;
 }
 
@@ -70,9 +71,9 @@ div.vertical {
 		<div class="horizontal">
 			<div class="vertical">
 				<div class="box">
-					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder=" Enter Login Password" /> <br />
-					<button id="loginbutton" type="button">Login</button>
-					<p id="wrongPassword" style="display: none">Wrong Password</p>
+					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
+					<button id="loginbutton" type="button">Enter</button>
+					<p id="wrongPassword" style="display: none">wrong password</p>
 				</div>
 			</div>
 		</div>
@@ -109,7 +110,7 @@ div.vertical {
 				parent.location.hash= hash;
 
 				//$("#wrongPassword").show();
-				$("#password").attr("placeholder","Invalid Password");
+				$("#password").attr("placeholder","wrong password");
 				$("#password").val("");
 			}
 		});
